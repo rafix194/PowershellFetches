@@ -1,0 +1,8 @@
+SELECT * 
+FROM Dbo.Fact
+WHERE Date_Column >= DATEADD(DAY, -90, GETDATE())
+
+
+
+select * from dbo.Fact where mydate > date_sub('2020-06-25'(), interval 90 day)
+
